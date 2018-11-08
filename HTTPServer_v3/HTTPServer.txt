@@ -1,0 +1,19 @@
+HTTPServer v 3.0
+    httpserver + WebFrame
+
+    httpserver 功能:
+        1.获取http请求
+        2.解析http请求
+        3.将请求内容发送给WebFrame
+        4.从WebFrame接受返回数据
+        5.将数据组织为Response格式发送给客户端
+
+    WebFrame功能:
+        1.从HTTpserver接受具体请求
+        2.判断请求网页 或者 数据,根据请求调用函数处理
+        3.将网页或者数据发送给httpserver
+
+    升级点:
+        1.采用了httpserver与应用程序分离,两个功能模块独立,降低了耦合度
+        2.数据的处理单独调用函数完成
+        3.两者的配合使用进程间通信
